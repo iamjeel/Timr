@@ -45,7 +45,7 @@ export default function App() {
     }
     return () => clearInterval(interval);
   }, [isActive, remainingSeconds]);
-  
+
 // To load Fonts
     if (!fontsLoaded) {
       return <AppLoading />;
@@ -92,6 +92,7 @@ const styles = StyleSheet.create({
     fontFamily: "Ubuntu-Light",
     color: "#F7F7F780",
     fontSize: 40,
+    textDecorationLine: "underline",
   },
   buttonTextReset: {
     color: "#F7F7F780",
